@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Course</title>
+  </head>
+  <body class="bg-slate-800 text-white">
+    <main class="flex-col w-4/5 h-4/5 m-40">
+      <section id="title-lesson-section" class="ml-7 mb-3 mt-2 w-2/3">
+        <h1 class="font-sans font-bold text-7xl text-white py-4">
+          Aula do Curso topzera
+        </h1>
+        <div class="flex-grow flex-row space-x-6">
+          <a
+            href="/public/course.html"
+            class="text-white text-lg underline py-2"
+          >
+            Area do Curso</a
+          >
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
+          >
+            favoritar
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="lesson-section"
+        class="ml-6 mb-3 mt-4 w-full flex justify-self-stretch rounded-lg bg-slate-700"
+      >
+        <div id="player" class="w-[978px] h-[542px] rounded-lg">
+          <iframe
+            class="relative w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/bg8yyVGD24g?controls=0"
+            allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="left-side-videos" class="flex-grow bg-slate-700">
+          <div
+            id="info-left-video"
+            class="flex place-content-between p-4 bg-slate-500"
+          >
+            <div class="flex flex-grow space-x-2">
+              <p>10</p>
+              <p>Anotações nessa Aula</p>
+            </div>
+            <a href="/public/notes-aula-x.html" class="underline">
+              Ver todas Anotações</a
+            >
+          </div>
+          <div
+            id="actual-video"
+            class="flex p-4 bg-slate-600 align-middle place-content-between"
+          >
+            <div class="flex">
+              <ion-icon name="pause-circle" size="large"></ion-icon>
+              <p class="text-lg pl-1">Essa é a aula atual</p>
+            </div>
+            <p class="text-slate-300">Concluído</p>
+          </div>
+          <div
+            id="next-video-1"
+            class="flex p-4 bg-slate-500 align-middle place-content-between"
+          >
+            <div class="flex">
+              <ion-icon name="play" size="large"></ion-icon>
+              <a href="/" class="text-lg pl-1">Proxima aula</a>
+            </div>
+            <p class="text-slate-300">Não Assistida</p>
+          </div>
+          <div
+            id="next-video-2"
+            class="flex p-4 bg-slate-500 align-middle place-content-between"
+          >
+            <div class="flex">
+              <ion-icon name="play" size="large"></ion-icon>
+              <a href="/" class="text-lg pl-1">Proxima aula</a>
+            </div>
+            <p class="text-slate-300">Não Assistida</p>
+          </div>
+          <div
+            id="next-video-3"
+            class="flex p-4 bg-slate-500 align-middle place-content-between"
+          >
+            <div class="flex">
+              <ion-icon name="play" size="large"></ion-icon>
+              <a href="/" class="text-lg pl-1">Proxima aula</a>
+            </div>
+            <p class="text-slate-300">Não Assistida</p>
+          </div>
+          <div
+            id="next-video-4"
+            class="flex p-4 pb-4 bg-slate-500 align-middle place-content-between"
+          >
+            <div class="flex">
+              <ion-icon name="play" size="large"></ion-icon>
+              <a href="/" class="text-lg pl-1">Proxima aula</a>
+            </div>
+            <p class="text-slate-300">Não Assistida</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="info-lesson-section"
+        class="flex w-[65%] ml-7 mb-2 mt-1 align-middle justify-items-stretch place-content-between"
+      >
+        <div class="flex space-x-1">
+          <ion-icon name="eye" size="large"></ion-icon>
+          <p class="text-lg">35</p>
+          <p class="text-lg">Views</p>
+        </div>
+        <div class="flex space-x-1">
+          <ion-icon name="add-circle" size="large"></ion-icon>
+          <a href="/public/add-to-course.html" class="underline text-lg"
+            >Adicione em outro curso</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+</html>
